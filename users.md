@@ -58,6 +58,12 @@ chmod 444 <filename/folder>
 | 1 | - | - | x |
 | 0 | - | - | - |
 
+Now, in a binary mode:
+
+rwx rwx rwx = 111 111 111
+rw- rw- rw- = 110 110 110
+rwx --- --- = 111 000 000
+
 ### chown command
 
 All files are “owned” by the user who creates them and by that user’s default group. To change the ownership to a specific user and group:
